@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Movie Duration Predictor</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Netflix Movie Duration Predictor</h1>
+        <form method="post">
+            {% csrf_token %}
+            <label for="release_year">Release Year:</label>
+            <input type="number" id="release_year" name="release_year" required><br><br>
+
+            <label for="type">Type:</label>
+            <select id="type" name="type" required>
+                <option value="Movie">Movie</option>
+                <option value="TV Show">TV Show</option>
+            </select><br><br>
+
+            <label for="rating">Rating:</label>
+            <select id="rating" name="rating" required>
+                <option value="TV-MA">TV-MA</option>
+                <option value="TV-14">TV-14</option>
+                <option value="TV-PG">TV-PG</option>
+                <option value="R">R</option>
+                <option value="PG-13">PG-13</option>
+                <option value="TV-Y">TV-Y</option>
+                <option value="TV-Y7">TV-Y7</option>
+                <option value="PG">PG</option>
+                <option value="TV-G">TV-G</option>
+                <option value="NR">NR</option>
+                <option value="G">G</option>
+                <option value="TV-Y7-FV">TV-Y7-FV</option>
+                <option value="NC-17">NC-17</option>
+            </select><br><br>
+
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country" required><br><br>
+
+            <button type="submit">Predict Duration</button>
+        </form>
+    </div>
+</body>
+</html>
