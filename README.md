@@ -1,4 +1,7 @@
 # Netflix Movie Duration Predictor
+<img width="1354" height="750" alt="image" src="https://github.com/user-attachments/assets/79016f3e-df71-46c6-80a0-172b53873595" />
+<img width="1356" height="762" alt="image" src="https://github.com/user-attachments/assets/b17341f2-d127-40c4-84fb-6c66ad0de09b" />
+
 
 ## Description
 This project is a machine learning application that predicts the duration of Netflix movies based on various features such as release year, type, rating, and country. The model is trained using Linear Regression on a dataset of Netflix titles, specifically filtered for movies with valid duration information.
@@ -112,3 +115,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## Acknowledgments
 - Netflix for providing the dataset
 - scikit-learn and Django communities for their excellent libraries
+
